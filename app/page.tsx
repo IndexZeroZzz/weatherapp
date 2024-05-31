@@ -13,11 +13,11 @@ export default function Home() {
         router.push(`/weather/${encoded}`);
     }
     return (
-        <main className="flex min-h-screen flex-col items-start p-20">
+        <main className="flex min-h-screen flex-col items-start p-10">
             <div className='flex flex-col items-start justify-between'>
-                <input className='outline-none font-extralight text-6xl' type="text" placeholder="City, Country Code"
+                <input className='outline-none font-extralight text-3xl md:text-5xl' type="text" placeholder="City, Country Code"
                        value={input} onChange={(e) => setInput(e.target.value)}/>
-                <button className='font-bold text-5xl mt-5' onClick={() => toWeather(input)}>Get Weather</button>
+                <button className='font-bold text-2xl md:text-4xl mt-5' onClick={() => toWeather(input)}>Get Weather</button>
             </div>
         </main>
     );
